@@ -22,4 +22,15 @@ describe('AppController (e2e)', () => {
       .expect(200)
       .expect('Hello World!');
   });
+
+  it('/shipping-fee (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/shipping-fee')
+      .query({ amount: 3000 })
+      .expect(200)
+      .expect({
+        orderAmount: 3000,
+        shippingFee: 1000,
+      });
+  });
 });
