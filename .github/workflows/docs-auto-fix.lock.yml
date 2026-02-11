@@ -20,7 +20,7 @@
 # For more information: https://github.com/github/gh-aw/blob/main/.github/aw/github-agentic-workflows.md
 #
 #
-# frontmatter-hash: 2e0eb333dfcd49480ebf6bccf01eccf58f60ba5e84fae6b8db7c0b2e66446a80
+# frontmatter-hash: 2b635c78fcc750fca1bdf559afede481fa43399a6402f9e9850a85f962310606
 
 name: "Docs Auto-Fix"
 "on":
