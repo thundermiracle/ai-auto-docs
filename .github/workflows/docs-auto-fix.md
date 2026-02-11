@@ -31,4 +31,4 @@ Keep documentation in `/docs` and `README.md` consistent with recent source code
 5. If no documentation updates are needed, exit without changes.
 
 ## Repo Notes
-- Update only documents that are actually affected by the code/config changes.
+- If shipping fee rules or API behavior change, update `/docs/shipping-fee-spec.md`.
