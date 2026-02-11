@@ -7,10 +7,10 @@ export class AppService {
   }
 
   calculateShippingFee(orderAmount: number): number {
-    if (orderAmount <= 3000) {
+    if (orderAmount <= 5000) {
       return 1000;
     }
-    if (orderAmount <= 9999) {
+    if (orderAmount <= 14999) {
       return 500;
     }
     return 0;
