@@ -20,7 +20,7 @@
 # For more information: https://github.com/github/gh-aw/blob/main/.github/aw/github-agentic-workflows.md
 #
 #
-# frontmatter-hash: 2b635c78fcc750fca1bdf559afede481fa43399a6402f9e9850a85f962310606
+# frontmatter-hash: 92667c11167f7d0cdc3280c5f656e5fba76d1e644693480db23fab92bd55bd06
 
 name: "Docs Auto-Fix"
 "on":
@@ -1077,7 +1077,7 @@ jobs:
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         env:
           GH_AW_AGENT_OUTPUT: ${{ env.GH_AW_AGENT_OUTPUT }}
-          GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: "{\"create_pull_request\":{\"base_branch\":\"${{ github.ref_name }}\",\"max\":1,\"max_patch_size\":1024},\"missing_data\":{},\"missing_tool\":{}}"
+          GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: "{\"create_pull_request\":{\"base_branch\":\"${{ github.ref_name }}\",\"draft\":false,\"max\":1,\"max_patch_size\":1024},\"missing_data\":{},\"missing_tool\":{}}"
         with:
           github-token: ${{ secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           script: |

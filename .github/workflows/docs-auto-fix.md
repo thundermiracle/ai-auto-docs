@@ -15,6 +15,7 @@ permissions:
   pull-requests: read
 safe-outputs:
   create-pull-request:
+    draft: false
   noop:
     max: 1
 tools:
